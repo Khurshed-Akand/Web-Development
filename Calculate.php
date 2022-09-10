@@ -14,12 +14,14 @@ $yearint=(int)$year;
 $math1=$monthint-$yearint*$v4;
 $math2=$dayint-$monthint*$v3;
 $math3=$v2-$dayint*$v1;
+$math4=$yearint*$v4*$v3*$v1+$math1*$v3*$v1+$math2*$v1+$math3;
 
-echo "<br><br><br> $yearint বছর, $math1 মাস, $math2 দিন, $math3 ঘণ্টা।";
+echo "<br><br><br> প্রতিদিন ৩ ঘণ্টা করে প্র্যাক্টিস করলে ১০০০০ ঘণ্টায় লাগবে: $yearint বছর, $math1 মাস, $math2 দিন, $math3 ঘণ্টা।";
 echo "<br><br><br> হিসাব: <br><br>";
-printf ("দিন: $v2/$v1 = $day অথবা, $dayint দিন $math3 ঘণ্টা<br>");
-printf ("<br> মাস: $day/$v3 = $month অথবা, $monthint মাস $math2 দিন <br>");
-printf ("<br> বছর: $month/$v4 = $year অথবা, $yearint বছর $math1 মাস <br>");
+printf ("দিন: $v2/$v1 = $day অথবা, $dayint দিন, $math3 ঘণ্টা। <br>");
+printf ("<br> মাস: $day/$v3 = $month অথবা, $monthint মাস, $math2 দিন, $math3 ঘণ্টা। <br>");
+printf ("<br> বছর: $month/$v4 = $year অথবা, $yearint বছর, $math1 মাস, $math2 দিন, $math3 ঘণ্টা। <br>");
 
+echo "<br><br> ক্রস চেকিং: $yearint*$v4*$v3*$v1+$math1*$v3*$v1+$math2*$v1+$math3 = $math4";
 
 ?>
