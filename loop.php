@@ -1,10 +1,10 @@
 <?php
 
 $even=" ";
-// $odd=" ";
-$i=15;
+$odd=" ";
+$i=1;
 
-while($i<=50)
+while($i<=100)
 {
 if($i%2==0)
 {
@@ -12,13 +12,13 @@ $even = $even . " " .$i ;
 }
 else
 {
-// $odd = $odd . " " .$i;
+$odd = $odd . " " .$i;
 }
 
 $i++;
 }
 
 echo "The Even No:" . $even . "<br>"; 
-// echo "The Odd No:" . $odd;
+echo "The Odd No:" . $odd;
 
 ?>
